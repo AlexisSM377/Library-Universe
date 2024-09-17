@@ -1,11 +1,16 @@
 ---
+import ListOfBooks from "../components/ListOfBooks.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main>
-    <h1 class="text-white text-6xl h-screen flex justify-center items-center">
-      Bienvenido a Books
+<Layout title="Welcome to Books.">
+  <main class="m-auto max-w-4xl">
+    <h1
+      class="text-6xl md:text-8xl font-semibold uppercase text-center py-8 px-4"
+    >
+      Libraty
+      <span class="text-[36px] md:text-[58px] font-normal block">Universe</span>
     </h1>
+    <ListOfBooks />
   </main>
 </Layout>
